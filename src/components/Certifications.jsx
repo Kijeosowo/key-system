@@ -14,9 +14,10 @@ const Certifications = () => {
                 Compliance/Standards Consulting Services
             </p>
             <div className="hidden md:flex border border-[#4169E1] bg-gradient-to-r from-[#000080] via-[#4169E1] to-[#000080] py-3 px-6 mt-5 mb-5 rounded-full">
-                <Link className="text-white text-lg font-semibold" to="/">Contact Us</Link>
+                <Link className="text-white text-lg font-semibold" to="/">
+                    Contact Us
+                </Link>
             </div>
-
             <img
                 src={CertificationImage}
                 alt="certifications"
