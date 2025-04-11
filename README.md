@@ -4,11 +4,11 @@ A pixel-perfect, fully responsive landing page built with **ReactJS**, **Tailwin
 
 ## 🌐 Live Demo
 
-[Click here to view the live site](https://your-deployment-link.vercel.app)
+[Click here to view the live site](https://keysystems.netlify.app/)
 
 ## 📂 Repository
 
-[GitHub Repository](https://github.com/your-username/project-name)
+[GitHub Repository](https://github.com/Kijeosowo/key-system)
 
 ---
 
