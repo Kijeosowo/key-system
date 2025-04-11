@@ -44,3 +44,17 @@ This project is a conversion of a modern Figma design into a high-performance, i
     npm install
     npm run dev
     ```
+
+    ```bash
+    Install ESLint
+    npm install eslint --save-dev
+    npm init @eslint/config
+
+    Install Husky
+    npm install husky --save-dev
+    npx husky install
+    ```
+
+```
+
+```

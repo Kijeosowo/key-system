@@ -6,9 +6,9 @@ import content from '../content';
 const Footer = () => {
     return (
         <div className="bg-[#030517] pt-10 pb-10 px-6 md:px-10 lg:px-20">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 min-h-[90vh]">
+            <footer className="grid grid-cols-1 lg:grid-cols-3 gap-10 min-h-[90vh]">
                 {/* Side Footer */}
-                <div className="flex flex-col justify-between">
+                <aside className="flex flex-col justify-between">
                     <div>
                         <Logo />
                         <p className="text-sm text-white mt-4 lg:max-w-[60%]">
@@ -31,7 +31,7 @@ const Footer = () => {
                     <div className="mt-6">
                         <Icons />
                     </div>
-                </div>
+                </aside>
 
                 {/* Main Footer */}
                 <main className="lg:col-span-2 flex flex-col justify-between">
@@ -127,7 +127,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </main>
-            </div>
+            </footer>
         </div>
     );
 };

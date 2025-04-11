@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Mouse from '../Images/mouse.webp';
 import content from '../content';
+import FadeInWhenVisible from './FadeInWhenVisible';
 
 const offeringsList = [
     'Core banking services',
@@ -42,45 +43,49 @@ const bggradients = [
 const Offerings = () => {
     return (
         <div className="bg-[#05071E] px-4 py-20">
-            <div className="flex flex-col gap-10 text-center items-center max-w-6xl mx-auto">
-                <h1 className="text-white font-semibold text-3xl md:text-5xl">
-                    {content.Offerings.title}
-                </h1>
-                <p className="text-white text-base md:text-xl leading-relaxed max-w-3xl">
-                    {content.Offerings.description}
-                </p>
-                <Link
-                    to="/"
-                    className="text-white w-fit text-sm sm:text-lg font-semibold border border-[#4169E1] bg-gradient-to-r from-[#000080] via-[#4169E1] to-[#000080] py-3 px-8 rounded-full"
-                >
-                    {content.Header.button.learn}
-                </Link>
-            </div>
+            <FadeInWhenVisible>
+                <header className="flex flex-col gap-10 text-center items-center max-w-6xl mx-auto">
+                    <h1 className="text-white font-semibold text-3xl md:text-5xl">
+                        {content.Offerings.title}
+                    </h1>
+                    <p className="text-white text-base md:text-xl leading-relaxed max-w-3xl">
+                        {content.Offerings.description}
+                    </p>
+                    <Link
+                        to="/"
+                        className="text-white w-fit text-sm sm:text-lg font-semibold border border-[#4169E1] bg-gradient-to-r from-[#000080] via-[#4169E1] to-[#000080] py-3 px-8 rounded-full"
+                    >
+                        {content.Header.button.learn}
+                    </Link>
+                </header>
+            </FadeInWhenVisible>
 
             {/* Gradient-bordered  */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 max-w-6xl mx-auto">
-                {offeringsList.map((item, index) => (
-                    <div
-                        key={index}
-                        className={`bg-gradient-to-b ${
-                            gradients[index % gradients.length]
-                        } p-[2px] rounded-full`}
-                    >
+            <FadeInWhenVisible>
+                <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16 max-w-6xl mx-auto">
+                    {offeringsList.map((item, index) => (
                         <div
-                            className={`bg-gradient-to-b text-white text-[24px] flex flex-col justify-center items-center py-5 ${
-                                bggradients[index % bggradients.length]
+                            key={index}
+                            className={`bg-gradient-to-b ${
+                                gradients[index % gradients.length]
                             } p-[2px] rounded-full`}
                         >
-                            <h1 className="text-center">{item}</h1>
-                            <img
-                                src={Mouse}
-                                alt="Mouse"
-                                className="w-8 sm:w-10 lg:w-5 mt-4 transition-transform duration-300 transform hover:rotate-12"
-                            />
+                            <div
+                                className={`bg-gradient-to-b text-white text-[24px] flex flex-col justify-center items-center py-5 ${
+                                    bggradients[index % bggradients.length]
+                                } p-[2px] rounded-full`}
+                            >
+                                <h1 className="text-center">{item}</h1>
+                                <img
+                                    src={Mouse}
+                                    alt="Mouse"
+                                    className="w-8 sm:w-10 lg:w-5 mt-4 transition-transform duration-300 transform hover:rotate-12"
+                                />
+                            </div>
                         </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </main>
+            </FadeInWhenVisible>
         </div>
     );
 };
