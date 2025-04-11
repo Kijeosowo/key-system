@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import CertificationImage from '../Images/certifications.png';
+import CertificationImage from '../Images/certifications.webp';
 import content from '../content';
 
 const Certifications = () => {
@@ -26,7 +26,7 @@ const Certifications = () => {
             <img
                 src={CertificationImage}
                 alt="certifications"
-                className="w-full max-w-3xl mt-8 px-4"
+                className="w-full max-w-5xl mt-8 px-4"
             />
         </div>
     );

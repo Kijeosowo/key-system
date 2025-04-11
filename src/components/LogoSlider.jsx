@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion, useAnimation } from 'framer-motion';
-import Image1 from '../images/Image1.png';
-import Image2 from '../images/Image2.png';
-import Image3 from '../images/Image3.png';
-import Image4 from '../images/Image4.png';
-import Image5 from '../images/Image5.png';
-import Image6 from '../images/Image6.png';
-import Image7 from '../images/Image7.png';
+import Image1 from '../images/Image1.webp';
+import Image2 from '../images/Image2.webp';
+import Image3 from '../images/Image3.webp';
+import Image4 from '../images/Image4.webp';
+import Image5 from '../images/Image5.webp';
+import Image6 from '../images/Image6.webp';
+import Image7 from '../images/Image7.webp';
 
 const logos = [Image1, Image2, Image3, Image4, Image5, Image6, Image7];
 

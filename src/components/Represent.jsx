@@ -1,7 +1,7 @@
 import React from 'react';
-import Search from '../Images/search.png';
-import Target from '../Images/target.png';
-import Blurbg from '../Images/blur.png';
+import Search from '../Images/search.webp';
+import Target from '../Images/target.webp';
+import Blurbg from '../Images/blur.webp';
 import content from '../content';
 
 const Represent = () => {

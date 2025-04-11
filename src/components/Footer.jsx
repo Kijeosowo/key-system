@@ -68,7 +68,7 @@ const Footer = () => {
                                 <p className="font-semibold text-white">
                                     {content.Contact.Nigeria.header}
                                 </p>
-                                <p className="text-[#CFCFCF]">
+                                <p className="text-[#CFCFCF] lg:max-w-[60%]">
                                     {content.Contact.Nigeria.desc}
                                 </p>
                             </div>
@@ -76,7 +76,7 @@ const Footer = () => {
                                 <p className="text-white font-semibold">
                                     {content.Contact.Uk.header}
                                 </p>
-                                <p className="text-[#CFCFCF]">
+                                <p className="text-[#CFCFCF] lg:max-w-[60%]">
                                     {content.Contact.Uk.desc}
                                 </p>
                             </div>

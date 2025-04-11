@@ -1,10 +1,10 @@
 import React from 'react';
-import Frame2 from '../Images/Frame2.png';
-import Frame3 from '../Images/Frame3.png';
-import Frame4 from '../Images/Frame4.png';
-import Frame5 from '../Images/Frame5.png';
-import Frame6 from '../Images/Frame6.png';
-import Framebg from '../Images/Framebg.png';
+import Frame2 from '../Images/Frame2.webp';
+import Frame3 from '../Images/Frame3.webp';
+import Frame4 from '../Images/Frame4.webp';
+import Frame5 from '../Images/Frame5.webp';
+import Frame6 from '../Images/Frame6.webp';
+import Framebg from '../Images/Framebg.webp';
 import content from '../content';
 
 const Partners = () => {

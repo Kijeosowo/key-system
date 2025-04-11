@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Mouse from '../Images/mouse.png';
+import Mouse from '../Images/mouse.webp';
 import content from '../content';
 
 const offeringsList = [

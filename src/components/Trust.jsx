@@ -1,8 +1,8 @@
 import React from 'react';
-import Frame from '../Images/Frame.png';
-import Cube from '../Images/cube.png';
-import Hand from '../Images/hand.png';
-import Check from '../Images/check.png';
+import Frame from '../Images/Frame.webp';
+import Cube from '../Images/cube.webp';
+import Hand from '../Images/hand.webp';
+import Check from '../Images/check.webp';
 import content from '../content';
 
 const Trust = () => {
