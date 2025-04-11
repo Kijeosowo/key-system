@@ -40,9 +40,12 @@ const Navbar = () => {
                 </ul>
 
                 {/* Call Center - Desktop only */}
-                <div className="hidden md:flex border border-[#4169E1] bg-gradient-to-r from-[#000080] via-[#4169E1] to-[#000080] py-2 px-6 rounded-full">
+                <a
+                    href="tel:+2348012345678"
+                    className="hidden md:flex border border-[#4169E1] bg-gradient-to-r from-[#000080] via-[#4169E1] to-[#000080] py-2 px-6 rounded-full cursor-pointer hover:opacity-90 transition"
+                >
                     <p className="text-white text-sm">{Content.navbar.phone}</p>
-                </div>
+                </a>
 
                 {/* Hamburger Icon */}
                 <button
@@ -60,9 +63,6 @@ const Navbar = () => {
                 >
                     <div className="p-5 flex justify-between items-center border-b border-gray-700">
                         <Logo />
-                        <button onClick={() => setMenuOpen(false)}>
-                            <X size={24} />
-                        </button>
                     </div>
                     <ul className="flex flex-col gap-6 p-6">
                         <li>

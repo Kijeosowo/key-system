@@ -3,25 +3,23 @@ import Frame from '../Images/Frame.png';
 import Cube from '../Images/cube.png';
 import Hand from '../Images/hand.png';
 import Check from '../Images/check.png';
+import content from '../content';
 
 const Trust = () => {
     const Processes = [
         {
-            title: 'Strategic Consultation',
-            description:
-                'We kick off with a strategic consultation to understand your brand, goals, and audience',
+            title: content.Process.cards.heading1,
+            description: content.Process.cards.desc1,
             image: Cube,
         },
         {
-            title: 'Collaboration',
-            description:
-                'At KeySystem, we collaborate closely to ensure the end result meets your expectations and makes you happy',
+            title: content.Process.cards.heading2,
+            description: content.Process.cards.desc2,
             image: Hand,
         },
         {
-            title: 'Delivery',
-            description:
-                'Our delivery rate is 100%; our clients deserve nothing less.',
+            title: content.Process.cards.heading3,
+            description: content.Process.cards.desc3,
             image: Check,
         },
     ];
@@ -31,10 +29,10 @@ const Trust = () => {
             {/* TRUST SECTION */}
             <div className="flex flex-col justify-center items-center pb-20 pt-20 gap-5 text-center">
                 <h1 className="text-[32px] md:text-[50px] font-semibold text-white">
-                    They Trust Us
+                    {content.Process.Trust.title}
                 </h1>
                 <p className="text-white text-[18px] md:text-[24px]">
-                    And so can you.
+                    {content.Process.Trust.desc}
                 </p>
                 <img
                     src={Frame}
@@ -46,16 +44,16 @@ const Trust = () => {
             {/* PROCESS SECTION */}
             <div className="flex flex-col justify-center items-center text-center gap-3 mb-10">
                 <h1 className="text-[32px] md:text-[50px] font-semibold text-white">
-                    Our Process
+                    {content.Process.Process.title}
                 </h1>
                 <p className="text-white text-[18px] md:text-[24px]">
-                    At KeySystem, we leave you with a lasting impression
+                    {content.Process.Process.desc}
                 </p>
             </div>
 
             {/* PROCESS CARDS */}
             <div className="flex flex-col gap-6">
-                {/* First process - full width on large screens */}
+                {/* First process  */}
                 <div className="bg-gradient-to-r from-[#04040A] via-[#05071E] to-[#111348] flex flex-col justify-between md:flex-row items-start md:items-center gap-5 p-8 rounded-xl">
                     <div className="flex flex-col gap-3 text-left flex-1">
                         <h1 className="text-white text-2xl md:text-3xl font-semibold">
@@ -72,7 +70,7 @@ const Trust = () => {
                     />
                 </div>
 
-                {/* Second and Third process side-by-side on large screens */}
+                {/*  */}
                 <div className="flex flex-col lg:flex-row gap-6">
                     {[Processes[1], Processes[2]].map((process, index) => (
                         <div

@@ -1,27 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CertificationImage from '../Images/certifications.png';
+import content from '../content';
 
 const Certifications = () => {
     return (
-        <div className="flex flex-col justify-center text-center items-center gap-5 bg-[#05071E] pb-32 pt-32">
-            <h1 className="text-white text-[50px] leading-[3rem] font-semibold">
-                Compliance Certifications/ <br />
-                Standards We Specialize In
+        <div className="flex flex-col justify-center text-center items-center gap-6 bg-[#05071E] px-4 py-20">
+            <h1 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-semibold lg:max-w-[50%]">
+                {content.Certification.title}
             </h1>
-            <p className="text-white text-[24px]">
-                Elevate Your Organization's Security Posture with Our <br />
-                Compliance/Standards Consulting Services
+
+            <p className="lg:max-w-[50%] text-white text-base sm:text-lg md:text-xl">
+                {content.Certification.desc}
             </p>
-            <div className="hidden md:flex border border-[#4169E1] bg-gradient-to-r from-[#000080] via-[#4169E1] to-[#000080] py-3 px-6 mt-5 mb-5 rounded-full">
-                <Link className="text-white text-lg font-semibold" to="/">
-                    Contact Us
+
+            <div className="mt-4">
+                <Link
+                    to="/"
+                    className="inline-block border border-[#4169E1] bg-gradient-to-r from-[#000080] via-[#4169E1] to-[#000080] py-3 px-8 rounded-full text-white text-sm sm:text-base font-semibold"
+                >
+                    {content.navbar.contact}
                 </Link>
             </div>
+
             <img
                 src={CertificationImage}
                 alt="certifications"
-                className="w-2/3"
+                className="w-full max-w-3xl mt-8 px-4"
             />
         </div>
     );

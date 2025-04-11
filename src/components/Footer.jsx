@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from './Logo';
 import Icons from '../components/Icons';
+import content from '../content';
 
 const Footer = () => {
     return (
@@ -10,21 +11,20 @@ const Footer = () => {
                 <div className="flex flex-col justify-between">
                     <div>
                         <Logo />
-                        <p className="text-sm text-white mt-4">
-                            2025 KeySystem Technology Limited. <br /> All rights
-                            reserved.
+                        <p className="text-sm text-white mt-4 lg:max-w-[60%]">
+                            {content.Footer.logotext}
                         </p>
                     </div>
 
                     <div className="mt-6">
                         <h1 className="text-xl font-semibold text-white">
-                            QUICK LINKS
+                            {content.Footer.links.title}
                         </h1>
                         <ul className="text-white py-4 flex flex-col gap-2">
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Services</li>
-                            <li>Contact</li>
+                            <li>{content.navbar.home}</li>
+                            <li>{content.navbar.about}</li>
+                            <li>{content.navbar.services}</li>
+                            <li>{content.navbar.contact}</li>
                         </ul>
                     </div>
 
@@ -33,61 +33,51 @@ const Footer = () => {
                     </div>
                 </div>
 
-                {/* Main Footer (spans 2 columns on large screens) */}
+                {/* Main Footer */}
                 <main className="lg:col-span-2 flex flex-col justify-between">
                     <div>
                         <h1 className="text-white font-semibold text-xl">
-                            SERVICES
+                            {content.Footer.Services.title}
                         </h1>
                         <div className="flex flex-col md:flex-row gap-10 py-4">
                             <ul className="flex flex-col gap-2 text-[#CFCFCF]">
-                                <li>Core refresh</li>
-                                <li>Application management services</li>
-                                <li>Evolution & enhancement services</li>
-                                <li>Solution Assurance & validation</li>
-                                <li>Digital Banking & financial inclusion</li>
-                                <li>Online/mobile lending solution</li>
+                                <li>{content.Footer.Services.list[1]}</li>
+                                <li>{content.Footer.Services.list[2]}</li>
+                                <li>{content.Footer.Services.list[3]}</li>
+                                <li>{content.Footer.Services.list[4]}</li>
+                                <li>{content.Footer.Services.list[5]}</li>
+                                <li>{content.Footer.Services.list[6]}</li>
                             </ul>
                             <ul className="flex flex-col gap-2 text-[#CFCFCF]">
-                                <li>Staff augmentation solutions</li>
-                                <li>
-                                    Risk management & Internal audit solutions
-                                </li>
-                                <li>
-                                    Data Warehouse & Business Intelligence (BI)
-                                </li>
-                                <li>
-                                    Enterprise Document Management Solutions
-                                </li>
-                                <li>KeySystem software testing</li>
-                                <li>Cybersecurity Solutions</li>
+                                <li>{content.Footer.Services.list[7]}</li>
+                                <li>{content.Footer.Services.list[8]}</li>
+                                <li>{content.Footer.Services.list[9]}</li>
+                                <li>{content.Footer.Services.list[10]}</li>
+                                <li>{content.Footer.Services.list[11]}</li>
+                                <li>{content.Footer.Services.list[12]}</li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="mt-8">
                         <h1 className="text-white font-semibold text-xl">
-                            CONTACT
+                            {content.Contact.title}
                         </h1>
                         <div className="flex flex-col md:flex-row gap-10 py-3">
                             <div>
                                 <p className="font-semibold text-white">
-                                    Nigeria
+                                    {content.Contact.Nigeria.header}
                                 </p>
                                 <p className="text-[#CFCFCF]">
-                                    p55G Adebisi Omotola Close, <br />
-                                    Off Samuel Adedoyin Street, <br />
-                                    Victoria Island.
+                                    {content.Contact.Nigeria.desc}
                                 </p>
                             </div>
                             <div>
                                 <p className="text-white font-semibold">
-                                    United Kingdom
+                                    {content.Contact.Uk.header}
                                 </p>
                                 <p className="text-[#CFCFCF]">
-                                    39 Kenyon Lane, Off Moston <br />
-                                    Lane, Moston, Manchester, <br />
-                                    United Kingdom, M40 9JG
+                                    {content.Contact.Uk.desc}
                                 </p>
                             </div>
                         </div>
@@ -97,36 +87,42 @@ const Footer = () => {
                     <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div>
                             <p className="text-white font-semibold">
-                                United Kingdom
+                                {content.Contact.Uk.header}
                             </p>
                             <p className="text-[#CFCFCF] py-2">
-                                Tel: +44 161 948 1444
+                                {content.Contact.Ukphone.phone}
                             </p>
                         </div>
                         <div>
                             <p className="text-white font-semibold">
-                                United Arab Emirates
+                                {content.Contact.arabphone.header}
                             </p>
                             <p className="text-[#CFCFCF] py-2">
-                                Tel: +971 50 423 8817
-                            </p>
-                        </div>
-                        <div>
-                            <p className="text-white font-semibold">Canada</p>
-                            <p className="text-[#CFCFCF] py-2">
-                                Tel: +1 647 977 1435
+                                {content.Contact.arabphone.phone}
                             </p>
                         </div>
                         <div>
-                            <p className="text-white font-semibold">Nigeria</p>
+                            <p className="text-white font-semibold">
+                                {content.Contact.canadaphone.header}
+                            </p>
                             <p className="text-[#CFCFCF] py-2">
-                                Tel: +234 818 444 1404
+                                {content.Contact.canadaphone.phone}
                             </p>
                         </div>
                         <div>
-                            <p className="text-white font-semibold">Email</p>
+                            <p className="text-white font-semibold">
+                                {content.Contact.Nigeria.header}
+                            </p>
                             <p className="text-[#CFCFCF] py-2">
-                                enquiries@keysystemltd.com
+                                {content.Contact.nigeriaphone.phone}
+                            </p>
+                        </div>
+                        <div>
+                            <p className="text-white font-semibold">
+                                {content.Contact.email.title}
+                            </p>
+                            <p className="text-[#CFCFCF] py-2">
+                                {content.Contact.email.mail}
                             </p>
                         </div>
                     </div>
